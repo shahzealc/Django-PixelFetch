@@ -1,0 +1,38 @@
+Homepage with random wallpapers
+    -Search bar 
+       displays related searched wallpaper on different page
+    -Tags
+        -Trending
+        -Latest
+        -Random
+        -Nature
+        -Dark
+        -Abstract
+
+When a Wallpaper is hover need to show username and likes and download count
+
+For selected wallpaper open it in new tab with filter:  
+                                                        Sort-Latest,Relavant
+                                                        Orientation-....
+                                                        Color-...
+                                                        Per-page-...
+
+    -wallpaper
+    -likes
+    -Downloads
+    -Title
+    -Description
+    -Download Button
+        -different sizes
+    -username
+    -Related Tags with link
+    -Related Wallpaper
+
+
+<a class="download-button" href="download?id={{id}}&url=full">Full</a>&nbsp;
+            <a class="download-button" href="download?id={{id}}&url=normal">Normal</a>&nbsp;
+            <a class="download-button" href="download?id={{id}}&url=small">Small</a>
+    
+    
+
+

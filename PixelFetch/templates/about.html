@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <title>About</title>
+    {% load static %}
+    <!-- Normalize -->
+
+    <link
+      rel="stylesheet"
+      href="{% static 'css/assets/normalize.css' %}"
+      type="text/css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="{% static 'css/assets/bootstrap.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Font-awesome.min -->
+
+    <link
+      href="{% static 'css/font-awesome.min.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Effet -->
+
+    <link
+      rel="stylesheet"
+      href="{% static 'css/gallery/foundation.min.css' %}"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/gallery/set1.css' %}"
+    />
+
+    <!-- Main Style -->
+
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+
+    <!-- Responsive Style -->
+
+    <link
+      href="{% static 'css/responsive.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script
+      src="js/assets/modernizr-2.8.3.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- header -->
+
+    {% include 'navbar.html' %}
+
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container bottomContainer">
+        <div class="ultimateImg">
+          <img class="mainImg" src="{% static 'images/zeal.jpg' %}">
+          <div class="purpleBox">
+            <p class="purpleText">
+              Zeal C. Shah<br>
+              Computer Engineering
+            </p>
+            <!-- <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg"> -->
+          </div>
+        </div>
+        <div class="allText bottomText">
+          <p class="text-blk headingText">
+            About Project
+          </p>
+          <p class="text-blk subHeadingText">
+            Pixel-Fetch
+          </p>
+          <p class="text-blk description">
+            "Discover a captivating wallpaper platform featuring a homepage with random wallpapers. Use the search bar to find related wallpapers on a separate page. Explore trending, latest, random, nature, dark, and abstract tags. Hover over wallpapers to see the username, likes, and download count. Open selected wallpapers in new tabs with customizable filters. Enjoy stunning visuals, download options, and related tags for further exploration. Unlock endless inspiration with this dynamic wallpaper experience."
+          </p>
+          <ul class = "icons">
+            <li>
+                <a href="https://www.linkedin.com/in/zeal--shah/"><i class = "fa fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/zeal._shah/"><i class = "fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/shahzealc"><i class = "fa fa-github"></i></a>
+            </li>
+            
+        </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <!-- jQuery -->
+    <script src="{% static 'js/assets/jquery.min.js' %}"></script>
+    <script
+      src="{% static 'js/assets/plugins.js' %}"
+      type="text/javascript"
+    ></script>
+    <script
+      src="{% static 'js/assets/bootstrap.min.js' %}"
+      type="text/javascript"
+    ></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="{% static 'js/custom.js' %}" type="text/javascript"></script>
+    <script
+      src="{% static 'js/jquery.contact.js' %}"
+      type="text/javascript"
+    ></script>
+    <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+    <script
+      src="{% static 'js/gallery/masonry.pkgd.min.js' %}"
+      type="text/javascript"
+    ></script>
+    <script
+      src="{% static 'js/gallery/imagesloaded.pkgd.min.js' %}"
+      type="text/javascript"
+    ></script>
+    <script
+      src="{% static 'js/gallery/jquery.infinitescroll.min.js' %}"
+      type="text/javascript"
+    ></script>
+    <script
+      src="{% static 'js/gallery/main.js' %}"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
