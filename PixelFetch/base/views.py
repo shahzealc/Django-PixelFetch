@@ -12,7 +12,7 @@ from pyzbar.pyzbar import decode
 
 def homepage(request):
     response = requests.get(
-        "https://api.unsplash.com/search/photos?page=1&per_page=30&query=random&client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY").json()
+        "https://api.unsplash.com/search/photos?page=1&per_page=30&query=random&client_id=APIKeywhichicantshowhere").json()
     response_info = response['results']
     ID = []
     img_link = []
@@ -27,7 +27,7 @@ def homepage(request):
     random_wallpaper_data = zip(ID, img_link, likes, user)
 
     response = requests.get(
-        "https://api.unsplash.com/search/photos?page=2&per_page=30&query=random&client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY").json()
+        "https://api.unsplash.com/search/photos?page=2&per_page=30&query=random&client_id=APIKeywhichicantshowhere").json()
     response_info = response['results']
     ID = []
     img_link = []
@@ -42,7 +42,7 @@ def homepage(request):
     random_wallpaper_data1 = zip(ID, img_link, likes, user)
 
     response = requests.get(
-        "https://api.unsplash.com/search/photos?page=3&per_page=30&query=random&client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY").json()
+        "https://api.unsplash.com/search/photos?page=3&per_page=30&query=random&client_id=APIKeywhichicantshowhere").json()
     response_info = response['results']
     ID = []
     img_link = []
@@ -64,7 +64,7 @@ def req_wall(request):
     else:
         query = request.GET.get('query')
 
-    url = "https://api.unsplash.com/search/photos?page=1&per_page=30&query={}&client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY".format(query)
+    url = "https://api.unsplash.com/search/photos?page=1&per_page=30&query={}&client_id=APIKeywhichicantshowhere".format(query)
     response = requests.get(url).json()
     response_info = response['results']
     ID = []
@@ -79,7 +79,7 @@ def req_wall(request):
         temp_list = [ID, img_link, likes, user]
     random_wallpaper_data = zip(ID, img_link, likes, user)
 
-    url = "https://api.unsplash.com/search/photos?page=2&per_page=30&query={}&client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY".format(query)
+    url = "https://api.unsplash.com/search/photos?page=2&per_page=30&query={}&client_id=APIKeywhichicantshowhere".format(query)
     response = requests.get(url).json()
     response_info = response['results']
     ID = []
@@ -94,7 +94,7 @@ def req_wall(request):
         temp_list = [ID, img_link, likes, user]
     random_wallpaper_data1 = zip(ID, img_link, likes, user)
 
-    url = "https://api.unsplash.com/search/photos?page=3&per_page=30&query={}&client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY".format(query)
+    url = "https://api.unsplash.com/search/photos?page=3&per_page=30&query={}&client_id=APIKeywhichicantshowhere".format(query)
     response = requests.get(url).json()
     response_info = response['results']
     ID = []
@@ -116,7 +116,7 @@ def about(request):
 
 def detail(request):
     wallpaper_id = request.GET.get('id')
-    url = "https://api.unsplash.com/photos/{}?client_id=mafc50Q51X-JOJeX2SXR7_RwMPjMBmQcx94QP9vXADY".format(wallpaper_id)
+    url = "https://api.unsplash.com/photos/{}?client_id=APIKeywhichicantshowhere".format(wallpaper_id)
     response = requests.get(url).json()
     # response_info = response['results']
   
